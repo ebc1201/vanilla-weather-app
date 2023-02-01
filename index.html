@@ -11,10 +11,122 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Weather App</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="container">
+      <div class="weather">
+        <form>
+          <div class="row">
+            <div class="col-9">
+              <input type="search" placeholder="Enter a city" class="form control search input">
+            </div>
+            <div class="col-3 p-0">
+              <input type="submit" class="btn btn-primary w-100" value="Search">
+            </div>
+          </div>
+        </form>
+        <div class="WeatherInfo">
+          <div class="row">
+            <div class="col-6">
+              <h1>Paris</h1>
+              <ul>
+                <li>
+                <span>Wednesday
+                  14
+                  :
+                  20
+                </span>
+                , 
+                broken clouds
+                </li>
+                <li>
+                  Humidity: 
+                  <strong>
+                    51
+                    %
+                  </strong>
+                  Wind: 
+                  <strong>
+                    5.66
+                    km/h
+                  </strong>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-8">
+              <div class="temperature-container d-flex justify-content-end">
+                <canvas width="52" height="52">
+                <div>
+                  <span class="temperature">12</span>
+                  <span class="unit">°C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="EatherForecast row">
+        <div class="col">
+          <div class="WeatherForecastPreview">
+            <div class="forecast-time">Wed</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">12°</span>
+              <span class="forecast-temperature-min">7°</span>
+            </div>
+          </div>
+        </div>
+        <div class="EatherForecast row">
+        <div class="col">
+          <div class="WeatherForecastPreview">
+            <div class="forecast-time">Thu</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">12°</span>
+              <span class="forecast-temperature-min">7°</span>
+            </div>
+          </div>
+        </div>
+        <div class="EatherForecast row">
+        <div class="col">
+          <div class="WeatherForecastPreview">
+            <div class="forecast-time">Fri</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">12°</span>
+              <span class="forecast-temperature-min">7°</span>
+            </div>
+          </div>
+        </div>
+        <div class="EatherForecast row">
+        <div class="col">
+          <div class="WeatherForecastPreview">
+            <div class="forecast-time">Sat</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">12°</span>
+              <span class="forecast-temperature-min">7°</span>
+            </div>
+          </div>
+        </div>
+        <div class="EatherForecast row">
+        <div class="col">
+          <div class="WeatherForecastPreview">
+            <div class="forecast-time">Sun</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">12°</span>
+              <span class="forecast-temperature-min">7°</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <footer>
+        Coded by Erica Chambers and is <a href="https://github.com/ebc1201/vanilla-weather-app" target="_blank">open-sourced on GitHub</a> and <a href="https://joyful-klepon-bd3316.netlify.app/">hosted on Netlify</a>.
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
