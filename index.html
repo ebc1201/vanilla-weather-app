@@ -11,6 +11,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
@@ -37,17 +38,18 @@
         <div class="WeatherInfo">
           <div class="row">
             <div class="overview">
-              <h1 id="city">Paris</h1>
+              <h1 id="city"></h1>
               <div class="row">
                 <div class="col-6">
                   <ul>
-                    <li class="date">
+                    <li id="date">
                       Wednesday 14:20<span>,</span>
-                      <span>broken clouds</span>
+                      <span id="description"></span>
                     </li>
                     <li>
-                      Humidity: <span id="humidity">10%</span>, Wind:
-                      <span id="wind">5m/h</span>
+                      Humidity: <span id="humidity"></span
+                      ><span class="percent">%</span>, Wind:
+                      <span id="wind"></span><span class="speed">km/h</span>
                     </li>
                   </ul>
                 </div>
@@ -60,7 +62,7 @@
                       alt="Clear"
                       id="icon"
                     />
-                    <strong id="temperature">12</strong>
+                    <strong id="temperature"></strong>
                     <span class="units">°C</span>
                   </div>
                 </div>
