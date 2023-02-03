@@ -28,16 +28,17 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
-  cityElement.innerHTML = response.data.name;
-  descriptionElement.innerHTML = response.data.weather[0].description;
-  humidityElement.innerHTML = response.data.main.humidity;
+  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
+  cityElement.innerHTML = response.data.city;
+  descriptionElement.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  dateElement.innerHTML = formatDate(response.data.time * 1000);
 }
 
-let apiKey = "8ace36d02a2f3b22f1f8a6b1fc8c960e";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Los+Angeles&appid=${apiKey}&units=imperial`;
+let apiKey = "5ae36e7a40754bfb55o3c43890a696t8";
+let city = "Portland";
+let apiUrl =
+  "https://api.shecodes.io/weather/v1/current?query=Lisbon&key=5ae36e7a40754bfb55o3c43890a696t8&units=imperial";
 
-console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
