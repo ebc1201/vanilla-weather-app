@@ -105,6 +105,43 @@ form {
   width: 64px;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast img {
+  width: 38px;
+  height: 38px;
+  margin: 20px;
+}
+
+.weather-forecast-date {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.weather-forecast-temperature-max {
+  color: #28427b;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.weather-forecast-temperature-min {
+  color: #28427b;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  opacity: 0.6;
+  margin-left: 10px;
+}
+
 li #humidity,
 #wind {
   color: #28427b;
