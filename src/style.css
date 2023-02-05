@@ -94,6 +94,14 @@ form {
   margin-top: 25px;
 }
 
+.weather-temperature .units #fahrenheit-link {
+  padding-left: 2px;
+}
+
+.weather-temperature .units #celsius-link {
+  padding-right: 2px;
+}
+
 .weather-temperature .units a {
   text-decoration: none;
 }
