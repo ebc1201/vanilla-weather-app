@@ -38,23 +38,19 @@
         </form>
         <div class="WeatherInfo">
           <div class="row">
-            <div class="overview">
+            <div class="col-6">
               <h1 id="city"></h1>
-              <div class="row">
-                <div class="col-6">
-                  <ul>
-                    <li>
-                      <span id="date"></span>,
-                      <span id="description"></span>
-                    </li>
-                    <li>
-                      Humidity: <span id="humidity"></span
-                      ><span class="percent">%</span>, Wind:
-                      <span id="wind"></span><span class="speed">km/h</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <ul>
+                <li>
+                  <span id="date"></span>,
+                  <span id="description"></span>
+                </li>
+                <li>
+                  Humidity: <span id="humidity"></span
+                  ><span class="percent">%</span>, Wind: <span id="wind"></span
+                  ><span class="speed">km/h</span>
+                </li>
+              </ul>
               <div class="row">
                 <div class="col-6">
                   <div class="d-flex weather-temperature">
@@ -71,16 +67,20 @@
           </div>
         </div>
         <div class="weather-forecast" id="forecast"></div>
+        <footer>
+          Coded by Erica Chambers and is
+          <a
+            href="https://github.com/ebc1201/vanilla-weather-app"
+            target="_blank"
+            >open-sourced on GitHub</a
+          >
+          and
+          <a href="https://joyful-klepon-bd3316.netlify.app/"
+            >hosted on Netlify</a
+          >
+        </footer>
       </div>
     </div>
-    <footer>
-      Coded by Erica Chambers and is
-      <a href="https://github.com/ebc1201/vanilla-weather-app" target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and
-      <a href="https://joyful-klepon-bd3316.netlify.app/">hosted on Netlify</a>
-    </footer>
     <script src="src/script.js"></script>
   </body>
 </html>

@@ -58,7 +58,6 @@ form {
   color: #000000;
   font-size: 38px;
   font-weight: 700;
-  line-height: 29px;
   line-height: 48px;
   margin: 20px 0 10px;
   padding: 0px;
@@ -106,8 +105,15 @@ form {
 }
 
 .weather-forecast {
-  margin-top: 20px;
+  margin: 40px 0;
   text-align: center;
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 50px;
+}
+
+.weather-forecast .row {
+  /*border: 1px solid red;*/
+  display: inline-flexbox;
 }
 
 .weather-forecast img {
@@ -153,8 +159,12 @@ li .percent,
 }
 
 footer {
+  color: rgba(39, 33, 66, 0.4);
   font-size: 14px;
+  line-height: 18px;
+  margin-top: 40px;
   text-align: center;
+  display: block;
 }
 
 footer a {
