@@ -1,9 +1,6 @@
-body {
-  background: #e5e5e5;
-  margin: 0;
-  display: block;
+html {
+  background-color: #ffffff;
 }
-
 .weather {
   max-width: 800px;
   margin: 30px auto;
@@ -88,18 +85,10 @@ form {
 
 .weather-temperature .units {
   color: #000000;
-  font-size: 16px;
+  font-size: 28px;
   position: relative;
   display: flex;
   margin-top: 25px;
-}
-
-.weather-temperature .units #fahrenheit-link {
-  padding-left: 2px;
-}
-
-.weather-temperature .units #celsius-link {
-  padding-right: 2px;
 }
 
 .weather-temperature .units a {
@@ -107,9 +96,9 @@ form {
 }
 
 .weather-temperature img {
-  margin: 10px 0;
-  height: 52px;
-  width: 52px;
+  margin: 15px 0;
+  height: 80px;
+  width: 80px;
 }
 
 .weather-forecast {
@@ -120,13 +109,12 @@ form {
 }
 
 .weather-forecast .row {
-  /*border: 1px solid red;*/
   display: inline-flexbox;
 }
 
 .weather-forecast img {
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
   margin: 20px;
 }
 
